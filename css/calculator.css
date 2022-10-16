@@ -29,6 +29,17 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 25%);
 }
+@media (max-width: 767px) {
+    .wrapper {
+        width: 500px;
+    }
+    .screen {
+        padding: 40px;
+    }
+    button {
+        padding: 40px;
+    }
+}
 
 button {
     background-color: #d8d9db;
