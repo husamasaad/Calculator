@@ -15,10 +15,11 @@ function buttonClick(value) {
         handleNumber(value)
     }
 
-    if (buffer == '40440') {
+    // this is just a secret message to a friend...
+    if (buffer == '40440') {  
         screen.innerText = " ❤ أسعدك الله يا فيض الرحمن";
     } else {
-        screen.innerText = buffer;
+        screen.innerText = buffer  // here is the actual code
     }
 }
 
