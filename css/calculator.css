@@ -14,7 +14,7 @@ body {
     font-weight: bold;
 }
 .wrapper {
-    width: 400px;
+    width: 450px;
     background-color: black;
 }
 
@@ -33,7 +33,7 @@ body {
 button {
     background-color: #d8d9db;
     font-size: 3rem;
-    padding: 25px;
+    padding: 30px;
 }
 
 button:hover {
