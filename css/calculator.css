@@ -7,59 +7,53 @@ html {
 body {
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     font-weight: bold;
+    background: linear-gradient(90deg, #91EECA 50%, #72729E 50%)
 }
 .wrapper {
-    width: 450px;
-    background-color: black;
+    width: 80vw;
+    margin: 40px auto;
+    background-color: #0F0D3D;
 }
 
 .screen {
     text-align: right;
     color: white;
-    padding: 15px;
-    font-size: 3rem;
+    padding: 40px;
+    font-size: 4rem;
+    background-color: #0F0D3D;
+    direction: rtl;
 }
 
 .calc-buttons {
     display: grid;
     grid-template-columns: repeat(4, 25%);
 }
-@media (max-width: 767px) {
-    .wrapper {
-        width: 500px;
-    }
-    .screen {
-        padding: 40px;
-    }
-    button {
-        padding: 40px;
-    }
-}
+
 
 button {
-    background-color: #d8d9db;
-    font-size: 3rem;
-    padding: 30px;
+    background-color: #0C0C5D;
+    font-size: 5rem;
+    padding: 50px;
+    border: 0.1px solid #0F0D3D;
+    color: white;
 }
 
+
+
 button:hover {
-    background-color: #ebebeb;
+    background-color: #91eeca3d;
 }
 button:active {
     background-color: #bbbcbe;
 }
 
 .func {
-    background-color: #df974c;
-    color: white;
+    background-color: #91EECA;
+    color: #0F0D3D;
 }
 .func:hover {
-    background-color: #dfb07e;
+    background-color: #72729E;
 }
 .func:active {
     background-color: #dd8d37;
@@ -71,4 +65,20 @@ button:active {
 
 .three-col {
     grid-column: span 3;
+}
+
+/* For Desktop */
+
+@media(min-width: 991px) {
+    .wrapper {
+        max-width: 450px;
+    }
+    .screen {
+        padding: 15px;
+        font-size: 3rem;
+    }
+    button {
+        font-size: 3rem;
+        padding: 20px;
+    }
 }
