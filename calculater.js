@@ -13,14 +13,10 @@ function buttonClick(value) {
     } else {
         // this is a number
         handleNumber(value)
-    }
-
-    // this is just a secret message to a friend...
-    if (buffer == '40440') {  
-        screen.innerText = "مرحبًا آنسة فيء أحمد، نتمنى لك تمام الشفاء والعافية والسعادة، إن قدرك عندنا لو تعلمين لعظيم، ونرجو ألا يمسك سوء أو مكروه أبدًا أبدًا، وكذلك نرجو منك العفو لما بدر منّا من تقصير أو غلظة في الحديث، أسعدك الله وحفظك ورعاك...";
-    } else {
-        screen.innerText = buffer  // here is the actual code
-    }
+    } 
+   
+    screen.innerText = buffer 
+    
 }
 
 function handleSymbol(symbol){
